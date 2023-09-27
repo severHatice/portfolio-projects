@@ -1,0 +1,163 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+.m-container{
+    /* background-color:lightgray; */
+    position: relative;
+}
+
+.main-container{
+    margin-left: 70px;
+    /* background-color: lightgray;*/
+} 
+header .navbar{
+    background-color: white !important;
+    padding: 30px 120px 0 0;
+}
+.navbar ul li{
+    list-style: none;
+}
+main .image-container .phone{
+    margin-top: 30px;
+    height: 460px;
+    width: 320px;
+}
+ .font-phone {
+    height: 500px;
+    width: 420px;
+}
+main .image-container .first{
+    position: absolute;
+    right: 0;
+    z-index: -1;
+}
+.phone-text{
+    line-height: 1.6em;
+    gap: 20px;
+}
+ /* h1{
+    font-size:28px;
+} */
+.phone-text button{
+ font-size: 13px;
+ width: 180px;
+}
+
+/* *****8read-more********************* */
+
+  
+.read-more p{
+   font-size: 12px;   
+   line-height: 1.9em;  
+}
+.read-more a{
+    text-decoration: none;
+    color: black;
+    font-size: 0.7em;
+}
+.read-more a:hover{
+    color: blue;
+}
+.read-container img{
+height:50px;
+margin: 20px;
+}
+
+
+/* ************phone-black********8 */
+.phone-black-container{
+    margin-top: 70px;
+}
+.phone-black-text{
+    padding: 80px 80px 0 0;
+}
+.phone-black{
+    width:280px;
+    height: 460px;
+}
+.font-phone-black{
+    position: absolute;
+    left: 0;
+    height: 370px;
+    z-index: -1;
+}
+.phone-black-read-more{
+    text-decoration: none;
+  
+}
+
+/* **********support-part********* */
+.support-text{
+margin: 20px;
+}
+.support-image{
+    height:420px;
+    width: 420px;
+    padding: 70px 120px 0 0;
+}
+.font-support-image{
+    position: absolute;
+    right: 0;
+    height: 460px;
+    z-index: -1;
+}
+.support-group{
+    text-align: start;
+    word-wrap: wrap;
+    margin-right:40px;
+    /* padding-right: 20px; */
+}
+
+/* **********last-images*********** */
+.space{
+    height:140px;
+}
+
+.card{
+   border: 0 solid white !important;
+    border-radius: 30px;
+}
+.date{
+font-size: 0.8em;
+}
+.card-title{
+    font-size:1.1em;
+}
+.card-text{
+    font-size: 0.8em;
+}
+.card-body a{
+    text-decoration:none;
+    color:black;
+    font-size: 0.9em;
+}
+.cards-container{
+    width:900px;
+}
+.cards-container h1{
+    /* text-align: center; */
+   padding: 40px 120px ;
+}
+
+/* *********footer*********** */
+footer{
+    background-color:rgb(236, 246, 249);
+}
+
+section ul li {
+list-style: none;
+}
+ section ul li.footer-title{
+    font-weight:500;
+ 
+}
+
+.brainfood{
+    font-weight:bold;
+    font-size: 20px;
+}
+footer ul li{
+    font-size: 13px;
+}

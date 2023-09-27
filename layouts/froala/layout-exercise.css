@@ -1,0 +1,47 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+header ul{
+    list-style: none;
+}
+.logo{
+    font-weight: bold;
+    color: rgb(130, 130, 196);
+    font-size: 30px;
+}
+.space{
+    height: 100px;
+}
+.multi-columns-text{
+    columns: 2;
+}
+
+
+
+/* ********8footer******* */
+
+footer ul{
+    list-style:none;
+
+}
+.contact-button{
+    width: 90px;
+ 
+}
+.icon-groupe {
+ font-size: 25px;
+
+}
+   /*hidden */
+   @media screen and (max-width:600px) {
+    
+   header .header-hidden{
+        display: none;
+        /* visibility: hidden; */
+    
+    }
+   }
+   

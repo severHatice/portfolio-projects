@@ -1,0 +1,83 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Inter', sans-serif;
+}
+
+main{
+    background-image: url("coffee-brain-caffeine-neuroscincces.webp");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 660px;
+}
+section{
+    margin: 0 40px ;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    margin: 0px;
+    height: 45px;
+}
+
+header a{
+    height: 40px;
+    margin-top: 15px;
+    background-color: rgba(0, 0, 0,0.60);
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+    letter-spacing: 1px;
+    padding: 15px;
+    font-size: x-large;
+}
+header h1{
+    margin-top: 15px;
+    display: flex;
+}
+header img{
+    height: 32px;
+}
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.title-tag{
+    margin: 100px 0;
+    border-top: 2px solid white;
+    border-bottom: 2px solid white;
+    color: white;
+    width: 400px;
+    overflow: visible;
+    padding: 20px 0
+}
+
+h2{
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+    width: 400px;
+}
+
+.diagonal{
+    background: linear-gradient(60deg, rgba(0,0,0,0.5) 70%, rgba(0,0,0,0)50%);
+    height: 660px;
+}
+
+
+.small-title{
+    font-size: 32px;
+}
+
+.big-title{
+    font-size: 96px;
+}
+.medium-title{
+    font-size: 20px;
+}

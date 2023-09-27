@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SnowFlakes</title>
+    <style>
+      body,html{
+        height:100vh;
+      }
+      body {
+        background-image: url(./snow-view-bg.png);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+
+      }
+      .snowflake {
+        font-size: 5rem;
+        color: white;
+        position: fixed;
+        /* absolute de olabiliyor  */
+        top: 0%;
+        /* animation-name: fall; */
+        animation-duration: 5s ;
+        animation-iteration-count: infinite; ;
+          /* animation-direction: alternate; */
+          /* alternate bitince islem tersinden yaptiriyor */
+        animation-timing-function: cubic-bezier (
+          0.65,
+          0.11,
+          0.29,
+          0.65
+        ); /*cubic-bezier(.65,.11,.29,.65)*/
+      }
+      @keyframes fall {
+        from {
+          top: 0%;
+        }
+        to {
+          top: 100%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <button>Moooooooore</button>
+    <section id="sky">
+      <span class="snowflake">*</span>
+    </section>
+
+    <script>
+      let btn = document.querySelector("button");
+      let snowflake = document.querySelector(".snowflake");
+      let sky = document.querySelector("#sky");
+
+    btn.addEventListener("click", createSnowflake);
+
+      function createSnowflake() {
+        let newSnowflake = document.createElement("span");//create first
+        sky.append(newSnowflake);//second append
+        newSnowflake.innerText = "*";// third customize
+        newSnowflake.classList.add("snowflake");//customize
+
+
+        let maxWidth = sky.clientWidth;
+        let maxHeight = sky.clientHeight;
+
+        let randomY = Math.floor(Math.random() * maxHeight);
+        let randomX = Math.floor(Math.random() * maxWidth);
+
+        newSnowflake.style.left = randomX + "px";
+        newSnowflake.style.top = randomY + "px";
+
+     
+        newSnowflake.addEventListener("animationIteration",()=>{
+            newSnowflake.remove();
+        })
+      
+      }
+
+    </script>
+  </body>
+</html>

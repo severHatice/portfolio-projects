@@ -1,0 +1,133 @@
+:root{
+    --main_color: #d57d12;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+/* General styling */
+body{
+    background-color: rgb(168, 168, 168);
+    font-family: sans-serif;
+}
+
+.card{
+    height: 420px;
+    width: 370px;
+    margin: 50px auto;
+    background-color: #fff;
+    overflow: hidden;
+    position: relative;
+        border-radius: 5px;
+        transition-duration: 0.4s;
+}
+/* Card mecanic */
+/* Last mile to make it perfect */
+
+.card:hover{
+    transform: translate(-20px, -20px);
+    box-shadow: 20px 20px 0 0 var(--main_color);
+}
+
+.card header{
+    background-image: url(https://picsum.photos/400/400);
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+        transition-duration: 0.4s;
+    filter: brightness(1);
+}
+
+.card:hover .card_header {
+    filter: brightness(0.5);
+}
+
+.card .card_content {
+    background-color: #fff;
+    padding: 20px;
+    position: absolute;
+    bottom: 0px;
+    transform: translateY(55%);
+    transition-duration: 0.4s;
+    /* Adjust the content section bottom offset */
+    bottom:50px;
+}
+
+.card:hover .card_content{
+    transform: translateY(0%);
+}
+
+.card .card_content h2 {
+    font-size: 1.5rem;
+
+}
+
+.card .card_content h3 {
+    color: var(--main_color);
+}
+
+.card .card_content p {
+    font-size: 1rem;
+    color: grey;
+    letter-spacing: 2px;
+    font-family: Arial, Helvetica;
+}
+
+/* Footer */
+.card .card_footer{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: #fff;
+    padding: 20px;
+}
+
+
+/* BONUS */
+/* Date */
+
+.card_date{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    /* Shape */
+    background-color: var(--main_color);
+    color: white;
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    /* Inner Layout */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.card_day{
+    font-size: 1.6rem;
+}
+
+.card_month{
+    text-transform: uppercase;
+}
+
+/* Catergory Tag */
+
+.card__category {
+    background-color: var(--main_color);
+    color: white;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-decoration: none;
+    position: absolute;
+    bottom: 100%;
+    left: 0;
+}
+
+
+
+
+
+

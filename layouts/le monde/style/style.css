@@ -1,0 +1,101 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #cccccc;
+    font-family: 'Spectral';
+}
+
+h1,h2 {
+    font-family: 'Roboto';
+}
+
+main{
+    width: 600px;
+    margin: auto;
+}
+
+h1{
+    text-transform: uppercase;
+    text-align: center;
+    background-color: #2980b9;
+    color: white;
+    margin-top: 80px;
+    margin-bottom: 20px;
+}
+
+article{
+    background-color: white;
+    padding: 20px;
+    margin: 5px 0;
+}
+
+.article-container{
+    display: flex;
+    gap: 10px;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+    background-color: darkgray;
+}
+
+ul{
+    list-style: none;
+    display: flex;
+    gap: 10px;
+}
+
+header ul a{
+    background-color: chartreuse;
+    color: white;
+
+    
+
+    padding: 20px 50px;
+
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+[href="#news"]{
+    background-color: #2980b8;
+}
+[href="#news"]:hover{
+    color:#2980b8 ;
+    background-color: white;
+}
+
+[href="#buzz"]{
+    color:white;
+    background-color: #c0392b;
+}
+[href="#buzz"]:hover{
+    color:#c0392b;
+    background-color: white;
+}
+[href="#sport"]{
+    color:white;
+    background-color:#27ae60 ;
+}
+ 
+[href="#sport"]:hover{
+    color:#27ae60;
+    background-color:white ;
+}
+
+[href="#economy"]{
+    color: white;
+    background-color: #16a085;
+}
+[href="#economy"]:hover{
+    color: #16a085;
+    background-color: white;
+}
+
