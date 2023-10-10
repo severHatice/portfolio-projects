@@ -5,51 +5,115 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <style>
-        body{
-            background:gray;
-        }
-        .card-container{
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            gap: 1rem;
-            margin: 30px auto;
- 
-        }
+      :root {
+        --text-color: #3fa7d6;
+        --hover-color: #64c9dd;
+        --bg-color: #091e25;
+        --big-font: 2.5rem;
+        --normal-font: 2rem;
+        --h2-font: 3rem;
+        --second-bg-color: #163c4a;
+        --neon-box-shadow: 0 0 0.5rem #5fc5ea;
+        --font-neon-text-shadow: 
+          0 0 10px rgba(100, 201, 221, 0.3),
+          0 0 20px rgba(100, 201, 221, 0.3),
+          0 0 30px rgba(100, 201, 221, 0.3),
+          0 0 40px rgba(100, 201, 221, 0.3),
+          0 0 70px rgba(100, 201, 221, 0.3),
+          0 0 80px rgba(100, 201, 221, 0.3),
+          0 0 100px rgba(100, 201, 221, 0.3),
+          0 0 150px rgba(100, 201, 221, 0.3);
+      }
+
+      body {
+        background: var(--bg-color);
+        color: #fbfbfb;
+      }
+
+      h1 {
+        text-align: center;
+        margin: 70px auto;
+        color: var(--text-color);
+        font-size: 1.8rem;
+        text-shadow: var(--font-neon-text-shadow);
+      }
+
+      .card-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 1.7rem;
+        margin: 100px auto;
+      }
+
       .card {
-        border: 1px solid #e0e0e0;
-        padding: 15px;
+        border: 1px solid var(--second-bg-color);
+        position: relative;
         border-radius: 5px;
-        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        box-shadow: var(--neon-box-shadow);
         transition: box-shadow 0.3s ease;
         cursor: pointer;
-        width: 12rem;
-        height: 18rem;
-        background: rgb(186, 183, 183);
+        width: 14rem;
+        height: 22rem;
+        background: var(--second-bg-color);
       }
+
       .card:hover {
-        box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+        box-shadow: 0 4px 16px var(--hover-color);
       }
+
       .card-title {
-        font-size: 24px;
+        font-size: 1.3rem;
         margin-bottom: 10px;
+        color: var(--text-color);
       }
-      img{
+
+      img {
         width: 100%;
-        height:50%
+        height: 55%;
+        border-radius: 5px;
+      }
+
+      .card-desc {
+        padding: 0 15px;
+      }
+
+      p {
+        font-size: .7rem;
+        color: var(--text-color);
+      }
+
+      button {
+        position: absolute;
+        bottom: 5px;
+        margin: 3px auto;
+        padding: 3px;
+        background-color: var(--hover-color);
+        border: none;
+        border-radius: 5px;
+        color: var(--bg-color);
+        left: 50%;
+        transform: translateX(-50%);
+        text-shadow: none;
+        cursor: pointer;
       }
     </style>
   </head>
   <body>
 
+<h1> FRONTEND PROJECTS</h1>
+
     <article class="card-container">
-      <section class="card" href="#" >
-        <img src="#" alt="">
-        <h1 class="card-title">title</h1>
-        <p class="card-description">description</p>
+      <section class="card" href="#">
+        <img src="#" alt="" />
+        <section class="card-desc">
+          <h2 class="card-title">title</h2>
+          <p class="card-description">description Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, nisi ducimus sequi cumque sunt commodi.
+          </p>
+        </section>
+        <button>see code</button>
       </section>
     </article>
-
 
     <script src="./specs/cardData.js"></script>
     <script src="./scripts/index.js"></script>
