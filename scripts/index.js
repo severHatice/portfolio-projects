@@ -12,7 +12,7 @@ cardDatas.forEach((card) => {
    clonedCard.addEventListener('click', () => {
       window.location.href = card.url; 
    });
-   clonedCard.querySelector('button').addEventListener('click', () => {
+   clonedCard.querySelector('button').addEventListener('click', (event) => {
       event.stopPropagation();  
       window.location.href = card.codeSource; 
    })
